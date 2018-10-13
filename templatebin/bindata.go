@@ -21,9 +21,9 @@
 // templates/19_reload.go.tpl (4.159kB)
 // templates/20_exists.go.tpl (2.855kB)
 // templates/21_auto_timestamps.go.tpl (2.12kB)
-// templates/singleton/boil_queries.go.tpl (769B)
-// templates/singleton/boil_table_names.go.tpl (196B)
-// templates/singleton/boil_types.go.tpl (2.958kB)
+// templates/singleton/zgen_boil_queries.go.tpl (769B)
+// templates/singleton/zgen_boil_table_names.go.tpl (196B)
+// templates/singleton/zgen_boil_types.go.tpl (2.958kB)
 // templates_test/00_types.go.tpl (173B)
 // templates_test/all.go.tpl (211B)
 // templates_test/delete.go.tpl (3.651kB)
@@ -42,9 +42,9 @@
 // templates_test/select.go.tpl (868B)
 // templates_test/types.go.tpl (186B)
 // templates_test/update.go.tpl (4.102kB)
-// templates_test/singleton/boil_main_test.go.tpl (1.97kB)
-// templates_test/singleton/boil_queries_test.go.tpl (975B)
-// templates_test/singleton/boil_suites_test.go.tpl (11.514kB)
+// templates_test/singleton/zgen_boil_main_test.go.tpl (1.97kB)
+// templates_test/singleton/zgen_boil_queries_test.go.tpl (975B)
+// templates_test/singleton/zgen_boil_suites_test.go.tpl (11.514kB)
 
 package templatebin
 
@@ -538,7 +538,7 @@ var _templatesSingletonBoil_queriesGoTpl = []byte("\x1f\x8b\x08\x00\x00\x00\x00\
 func templatesSingletonBoil_queriesGoTplBytes() ([]byte, error) {
 	return bindataRead(
 		_templatesSingletonBoil_queriesGoTpl,
-		"templates/singleton/boil_queries.go.tpl",
+		"templates/singleton/zgen_boil_queries.go.tpl",
 	)
 }
 
@@ -548,7 +548,7 @@ func templatesSingletonBoil_queriesGoTpl() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/singleton/boil_queries.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
+	info := bindataFileInfo{name: "templates/singleton/zgen_boil_queries.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
 	a := &asset{bytes: bytes, info: info, digest: [32]uint8{0x8f, 0x97, 0xe, 0x49, 0xf0, 0x80, 0x7, 0xf3, 0x8, 0x9f, 0x11, 0xca, 0x2, 0x9, 0x6d, 0xef, 0x56, 0x55, 0xb, 0x2c, 0xd2, 0x68, 0x6d, 0x7e, 0x5, 0x85, 0xba, 0x6d, 0x30, 0xa, 0x21, 0x2c}}
 	return a, nil
 }
@@ -558,7 +558,7 @@ var _templatesSingletonBoil_table_namesGoTpl = []byte("\x1f\x8b\x08\x00\x00\x00\
 func templatesSingletonBoil_table_namesGoTplBytes() ([]byte, error) {
 	return bindataRead(
 		_templatesSingletonBoil_table_namesGoTpl,
-		"templates/singleton/boil_table_names.go.tpl",
+		"templates/singleton/zgen_boil_table_names.go.tpl",
 	)
 }
 
@@ -568,7 +568,7 @@ func templatesSingletonBoil_table_namesGoTpl() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/singleton/boil_table_names.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
+	info := bindataFileInfo{name: "templates/singleton/zgen_boil_table_names.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
 	a := &asset{bytes: bytes, info: info, digest: [32]uint8{0x4f, 0xe7, 0x4d, 0x77, 0xa4, 0x5, 0xca, 0xf4, 0x78, 0xa2, 0xe3, 0x36, 0x28, 0x8e, 0x64, 0xa8, 0x5c, 0xe9, 0x60, 0x4, 0xb1, 0x55, 0x4a, 0xa9, 0x85, 0x96, 0xb4, 0xab, 0x58, 0x8b, 0x1f, 0x4b}}
 	return a, nil
 }
@@ -578,7 +578,7 @@ var _templatesSingletonBoil_typesGoTpl = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x0
 func templatesSingletonBoil_typesGoTplBytes() ([]byte, error) {
 	return bindataRead(
 		_templatesSingletonBoil_typesGoTpl,
-		"templates/singleton/boil_types.go.tpl",
+		"templates/singleton/zgen_boil_types.go.tpl",
 	)
 }
 
@@ -588,7 +588,7 @@ func templatesSingletonBoil_typesGoTpl() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/singleton/boil_types.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
+	info := bindataFileInfo{name: "templates/singleton/zgen_boil_types.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
 	a := &asset{bytes: bytes, info: info, digest: [32]uint8{0x84, 0x94, 0x19, 0x14, 0xf, 0xd5, 0xbb, 0x54, 0x82, 0x4c, 0x74, 0x95, 0xd4, 0x41, 0x9e, 0xaa, 0x28, 0xca, 0x83, 0xfd, 0x65, 0xa8, 0x2e, 0x72, 0xd5, 0x74, 0xc7, 0x46, 0x40, 0xb5, 0x7e, 0xbd}}
 	return a, nil
 }
@@ -958,7 +958,7 @@ var _templates_testSingletonBoil_main_testGoTpl = []byte("\x1f\x8b\x08\x00\x00\x
 func templates_testSingletonBoil_main_testGoTplBytes() ([]byte, error) {
 	return bindataRead(
 		_templates_testSingletonBoil_main_testGoTpl,
-		"templates_test/singleton/boil_main_test.go.tpl",
+		"templates_test/singleton/zgen_boil_main_test.go.tpl",
 	)
 }
 
@@ -968,7 +968,7 @@ func templates_testSingletonBoil_main_testGoTpl() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates_test/singleton/boil_main_test.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
+	info := bindataFileInfo{name: "templates_test/singleton/zgen_boil_main_test.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
 	a := &asset{bytes: bytes, info: info, digest: [32]uint8{0xc8, 0x2a, 0xbf, 0x48, 0x3c, 0xbe, 0x2d, 0x3c, 0x42, 0x2, 0x67, 0xd0, 0x97, 0xe9, 0xcb, 0xb8, 0xb7, 0x5e, 0x47, 0xd0, 0x47, 0x8a, 0xd9, 0x8e, 0xe2, 0xb1, 0x9a, 0x28, 0xc9, 0x71, 0x51, 0x3c}}
 	return a, nil
 }
@@ -978,7 +978,7 @@ var _templates_testSingletonBoil_queries_testGoTpl = []byte("\x1f\x8b\x08\x00\x0
 func templates_testSingletonBoil_queries_testGoTplBytes() ([]byte, error) {
 	return bindataRead(
 		_templates_testSingletonBoil_queries_testGoTpl,
-		"templates_test/singleton/boil_queries_test.go.tpl",
+		"templates_test/singleton/zgen_boil_queries_test.go.tpl",
 	)
 }
 
@@ -988,7 +988,7 @@ func templates_testSingletonBoil_queries_testGoTpl() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates_test/singleton/boil_queries_test.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
+	info := bindataFileInfo{name: "templates_test/singleton/zgen_boil_queries_test.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
 	a := &asset{bytes: bytes, info: info, digest: [32]uint8{0xc3, 0x6f, 0xe3, 0x63, 0x7c, 0x8f, 0x6b, 0x38, 0x2b, 0x53, 0x75, 0xd0, 0x1e, 0x40, 0xc9, 0x9b, 0xa3, 0xd5, 0x30, 0xa3, 0xbe, 0x36, 0xd9, 0xdc, 0xfb, 0xae, 0x3f, 0x42, 0x27, 0xaf, 0xad, 0xd3}}
 	return a, nil
 }
@@ -998,7 +998,7 @@ var _templates_testSingletonBoil_suites_testGoTpl = []byte("\x1f\x8b\x08\x00\x00
 func templates_testSingletonBoil_suites_testGoTplBytes() ([]byte, error) {
 	return bindataRead(
 		_templates_testSingletonBoil_suites_testGoTpl,
-		"templates_test/singleton/boil_suites_test.go.tpl",
+		"templates_test/singleton/zgen_boil_suites_test.go.tpl",
 	)
 }
 
@@ -1008,7 +1008,7 @@ func templates_testSingletonBoil_suites_testGoTpl() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates_test/singleton/boil_suites_test.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
+	info := bindataFileInfo{name: "templates_test/singleton/zgen_boil_suites_test.go.tpl", size: 0, mode: os.FileMode(0), modTime: time.Unix(0, 0)}
 	a := &asset{bytes: bytes, info: info, digest: [32]uint8{0x50, 0xf7, 0x42, 0x7f, 0x3e, 0x35, 0x7c, 0x3d, 0x56, 0x13, 0x4f, 0x7b, 0xf6, 0xb3, 0x93, 0xaa, 0x3c, 0x57, 0xa, 0xb2, 0x28, 0xd3, 0x44, 0x62, 0x90, 0xb, 0x31, 0x38, 0xf1, 0x28, 0xdf, 0x7c}}
 	return a, nil
 }
@@ -1146,11 +1146,11 @@ var _bindata = map[string]func() (*asset, error){
 
 	"templates/21_auto_timestamps.go.tpl": templates21_auto_timestampsGoTpl,
 
-	"templates/singleton/boil_queries.go.tpl": templatesSingletonBoil_queriesGoTpl,
+	"templates/singleton/zgen_boil_queries.go.tpl": templatesSingletonBoil_queriesGoTpl,
 
-	"templates/singleton/boil_table_names.go.tpl": templatesSingletonBoil_table_namesGoTpl,
+	"templates/singleton/zgen_boil_table_names.go.tpl": templatesSingletonBoil_table_namesGoTpl,
 
-	"templates/singleton/boil_types.go.tpl": templatesSingletonBoil_typesGoTpl,
+	"templates/singleton/zgen_boil_types.go.tpl": templatesSingletonBoil_typesGoTpl,
 
 	"templates_test/00_types.go.tpl": templates_test00_typesGoTpl,
 
@@ -1188,11 +1188,11 @@ var _bindata = map[string]func() (*asset, error){
 
 	"templates_test/update.go.tpl": templates_testUpdateGoTpl,
 
-	"templates_test/singleton/boil_main_test.go.tpl": templates_testSingletonBoil_main_testGoTpl,
+	"templates_test/singleton/zgen_boil_main_test.go.tpl": templates_testSingletonBoil_main_testGoTpl,
 
-	"templates_test/singleton/boil_queries_test.go.tpl": templates_testSingletonBoil_queries_testGoTpl,
+	"templates_test/singleton/zgen_boil_queries_test.go.tpl": templates_testSingletonBoil_queries_testGoTpl,
 
-	"templates_test/singleton/boil_suites_test.go.tpl": templates_testSingletonBoil_suites_testGoTpl,
+	"templates_test/singleton/zgen_boil_suites_test.go.tpl": templates_testSingletonBoil_suites_testGoTpl,
 }
 
 // AssetDir returns the file names below a certain
@@ -1259,9 +1259,9 @@ var _bintree = &bintree{nil, map[string]*bintree{
 		"20_exists.go.tpl":                         &bintree{templates20_existsGoTpl, map[string]*bintree{}},
 		"21_auto_timestamps.go.tpl":                &bintree{templates21_auto_timestampsGoTpl, map[string]*bintree{}},
 		"singleton": &bintree{nil, map[string]*bintree{
-			"boil_queries.go.tpl":     &bintree{templatesSingletonBoil_queriesGoTpl, map[string]*bintree{}},
-			"boil_table_names.go.tpl": &bintree{templatesSingletonBoil_table_namesGoTpl, map[string]*bintree{}},
-			"boil_types.go.tpl":       &bintree{templatesSingletonBoil_typesGoTpl, map[string]*bintree{}},
+			"zgen_boil_queries.go.tpl":     &bintree{templatesSingletonBoil_queriesGoTpl, map[string]*bintree{}},
+			"zgen_boil_table_names.go.tpl": &bintree{templatesSingletonBoil_table_namesGoTpl, map[string]*bintree{}},
+			"zgen_boil_types.go.tpl":       &bintree{templatesSingletonBoil_typesGoTpl, map[string]*bintree{}},
 		}},
 	}},
 	"templates_test": &bintree{nil, map[string]*bintree{
@@ -1282,9 +1282,9 @@ var _bintree = &bintree{nil, map[string]*bintree{
 		"reload.go.tpl":                         &bintree{templates_testReloadGoTpl, map[string]*bintree{}},
 		"select.go.tpl":                         &bintree{templates_testSelectGoTpl, map[string]*bintree{}},
 		"singleton": &bintree{nil, map[string]*bintree{
-			"boil_main_test.go.tpl":    &bintree{templates_testSingletonBoil_main_testGoTpl, map[string]*bintree{}},
-			"boil_queries_test.go.tpl": &bintree{templates_testSingletonBoil_queries_testGoTpl, map[string]*bintree{}},
-			"boil_suites_test.go.tpl":  &bintree{templates_testSingletonBoil_suites_testGoTpl, map[string]*bintree{}},
+			"zgen_boil_main_test.go.tpl":    &bintree{templates_testSingletonBoil_main_testGoTpl, map[string]*bintree{}},
+			"zgen_boil_queries_test.go.tpl": &bintree{templates_testSingletonBoil_queries_testGoTpl, map[string]*bintree{}},
+			"zgen_boil_suites_test.go.tpl":  &bintree{templates_testSingletonBoil_suites_testGoTpl, map[string]*bintree{}},
 		}},
 		"types.go.tpl":  &bintree{templates_testTypesGoTpl, map[string]*bintree{}},
 		"update.go.tpl": &bintree{templates_testUpdateGoTpl, map[string]*bintree{}},

@@ -63,7 +63,6 @@ func initConfig() {
 }
 
 func main() {
-	fmt.Println("HELLO NEW WORLD")
 	// Too much happens between here and cobra's argument handling, for
 	// something so simple just do it immediately.
 	for _, arg := range os.Args {

@@ -48,7 +48,6 @@ type State struct {
 
 // New creates a new state based off of the config
 func New(config *Config) (*State, error) {
-	fmt.Println("Setting state")
 	s := &State{
 		Config: config,
 	}
@@ -127,7 +126,6 @@ func New(config *Config) (*State, error) {
 // Run executes the sqlboiler templates and outputs them to files based on the
 // state given.
 func (s *State) Run() error {
-	fmt.Println("Running smth")
 	data := &templateData{
 		Tables:           s.Tables,
 		Aliases:          s.Config.Aliases,
@@ -499,8 +497,16 @@ func columnMerge(dst, src drivers.Column) drivers.Column {
 // initOutFolders creates the folders that will hold the generated output.
 func (s *State) initOutFolders(lazyTemplates []lazyTemplate) error {
 	if s.Config.Wipe {
-		if err := os.RemoveAll(s.Config.OutFolder); err != nil {
+		files, err := filepath.Glob(filepath.Join(s.Config.OutFolder, "zgen_*"))
+		if err != nil {
 			return err
+		}
+
+		for _, file := range files {
+			err = os.RemoveAll(file)
+			if err != nil {
+				return err
+			}
 		}
 	}
 

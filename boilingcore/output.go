@@ -50,7 +50,6 @@ type executeTemplateData struct {
 
 // generateOutput builds the file output and sends it to outHandler for saving
 func generateOutput(state *State, dirExts dirExtMap, data *templateData) error {
-	fmt.Println("Generating output")
 	return executeTemplates(executeTemplateData{
 		state:                state,
 		data:                 data,
@@ -146,7 +145,6 @@ func executeTemplates(e executeTemplateData) error {
 				fName = filepath.Join(dir, fName)
 			}
 
-			fmt.Println("WORKS!")
 			if err := writeFile(e.state.Config.OutFolder, fName, out, isGo); err != nil {
 				return err
 			}
@@ -192,7 +190,6 @@ func executeSingletonTemplates(e executeTemplateData) error {
 			return err
 		}
 
-		fmt.Println("Some write file")
 		if err := writeFile(e.state.Config.OutFolder, normalized, out, isGo); err != nil {
 			return err
 		}
@@ -210,7 +207,6 @@ func writeFileDisclaimer(out *bytes.Buffer) {
 // writePackageName writes the package name correctly, ignores errors
 // since it's to the concrete buffer type which produces none
 func writePackageName(out *bytes.Buffer, pkgName string) {
-	fmt.Println("Writing package name: ", pkgName)
 	_, _ = fmt.Fprintf(out, "package %s\n\n", pkgName)
 }
 
@@ -225,7 +221,6 @@ func writeImports(out *bytes.Buffer, imps importers.Set) {
 // writeFile writes to the given folder and filename, formatting the buffer
 // given.
 func writeFile(outFolder string, fileName string, input *bytes.Buffer, format bool) error {
-	fmt.Println("Writing file ", fileName)
 	var byt []byte
 	var err error
 	if format {
@@ -301,7 +296,6 @@ func getLongExt(filename string) string {
 // templates/singleton/hello.go.tpl
 // templates_test/js/hello.js.tpl
 func outputFilenameParts(filename string) (normalized string, isSingleton, isGo, usePkg bool) {
-	fmt.Println("Writing some parts")
 	fragments := strings.Split(filename, string(os.PathSeparator))
 	isSingleton = fragments[len(fragments)-2] == "singleton"
 
