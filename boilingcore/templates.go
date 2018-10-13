@@ -12,9 +12,9 @@ import (
 	"text/template"
 
 	"github.com/pkg/errors"
-	"github.com/volatiletech/sqlboiler/drivers"
-	"github.com/volatiletech/sqlboiler/strmangle"
-	"github.com/volatiletech/sqlboiler/templatebin"
+	"github.com/R0bson/sqlboiler/drivers"
+	"github.com/R0bson/sqlboiler/strmangle"
+	"github.com/R0bson/sqlboiler/templatebin"
 )
 
 // templateData for sqlboiler templates

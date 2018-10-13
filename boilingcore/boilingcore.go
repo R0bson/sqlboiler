@@ -12,10 +12,10 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	"github.com/volatiletech/sqlboiler/drivers"
-	"github.com/volatiletech/sqlboiler/importers"
-	"github.com/volatiletech/sqlboiler/strmangle"
-	"github.com/volatiletech/sqlboiler/templatebin"
+	"github.com/R0bson/sqlboiler/drivers"
+	"github.com/R0bson/sqlboiler/importers"
+	"github.com/R0bson/sqlboiler/strmangle"
+	"github.com/R0bson/sqlboiler/templatebin"
 )
 
 const (
@@ -48,6 +48,7 @@ type State struct {
 
 // New creates a new state based off of the config
 func New(config *Config) (*State, error) {
+	fmt.Println("Setting state")
 	s := &State{
 		Config: config,
 	}
@@ -126,6 +127,7 @@ func New(config *Config) (*State, error) {
 // Run executes the sqlboiler templates and outputs them to files based on the
 // state given.
 func (s *State) Run() error {
+	fmt.Println("Running smth")
 	data := &templateData{
 		Tables:           s.Tables,
 		Aliases:          s.Config.Aliases,

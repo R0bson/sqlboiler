@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e35ac26-3c5d-41ce-8f9a-562c1a376370" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boil.sh" beforeDir="false" afterPath="$PROJECT_DIR$/boil.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boil/columns.go" beforeDir="false" afterPath="$PROJECT_DIR$/boil/columns.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/aliases.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/aliases.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/aliases_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/aliases_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/boilingcore.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/boilingcore.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/boilingcore_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/boilingcore_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/config_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/output.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/output.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/templates.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/templates.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/text_helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/text_helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boilingcore/text_helpers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/boilingcore/text_helpers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/binary_driver.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/binary_driver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/column.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/column.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/interface_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/interface_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/mocks/mock.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/mocks/mock.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/registration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/registration_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/sqlboiler-mssql/driver/mssql.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/sqlboiler-mssql/driver/mssql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/sqlboiler-mssql/driver/mssql_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/sqlboiler-mssql/driver/mssql_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/sqlboiler-mssql/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/sqlboiler-mssql/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/sqlboiler-mysql/driver/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/sqlboiler-mysql/driver/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/sqlboiler-mysql/driver/mysql_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/sqlboiler-mysql/driver/mysql_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/sqlboiler-mysql/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/sqlboiler-mysql/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/sqlboiler-psql/driver/psql.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/sqlboiler-psql/driver/psql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/sqlboiler-psql/driver/psql_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/sqlboiler-psql/driver/psql_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/sqlboiler-psql/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/sqlboiler-psql/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/importers/imports.go" beforeDir="false" afterPath="$PROJECT_DIR$/importers/imports.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/importers/imports_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/importers/imports_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/eager_load.go" beforeDir="false" afterPath="$PROJECT_DIR$/queries/eager_load.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/eager_load_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/queries/eager_load_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/qm/query_mods.go" beforeDir="false" afterPath="$PROJECT_DIR$/queries/qm/query_mods.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/query.go" beforeDir="false" afterPath="$PROJECT_DIR$/queries/query.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/query_builders.go" beforeDir="false" afterPath="$PROJECT_DIR$/queries/query_builders.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/query_builders_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/queries/query_builders_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/queries/reflect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/reflect_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/queries/reflect_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomize/random.go" beforeDir="false" afterPath="$PROJECT_DIR$/randomize/random.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomize/randomize.go" beforeDir="false" afterPath="$PROJECT_DIR$/randomize/randomize.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/array.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/array.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/hstore.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/hstore.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/json.go" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../volatiletech/sqlboiler/boilingcore/boilingcore.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="127" column="29" lean-forward="true" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boil/global.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boil/columns.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boil/db.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boil.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="304" column="38" lean-forward="true" selection-start-line="304" selection-start-column="38" selection-end-line="304" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boilingcore/output.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boilingcore/aliases.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boilingcore/config.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-342" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boilingcore/boilingcore.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="128" column="17" lean-forward="true" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fname</find>
+      <find>.go</find>
+      <find>write</find>
+      <find>hello</find>
+      <find>go-bindata</find>
+      <find>writefil</find>
+      <find>volatiletech/sqlboiler</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>R0bson/sqlboiler</replace>
+    </replaceStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../../../gitlab.com/R0bson/badabus/main.go" />
+        <option value="$PROJECT_DIR$/templatebin/bindata.go" />
+        <option value="$PROJECT_DIR$/boilingcore/boilingcore.go" />
+        <option value="$PROJECT_DIR$/boilingcore/output.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1853" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqlboiler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqlboiler" type="462c0819:PsiDirectoryNode" />
+              <item name="boil" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqlboiler" type="462c0819:PsiDirectoryNode" />
+              <item name="boilingcore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqlboiler" type="462c0819:PsiDirectoryNode" />
+              <item name="drivers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqlboiler" type="462c0819:PsiDirectoryNode" />
+              <item name="queries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqlboiler" type="462c0819:PsiDirectoryNode" />
+              <item name="templatebin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sqlboiler" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;sqlboiler&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;sqlboiler&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;sqlboiler&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;sqlboiler&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="volatiletech" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;sqlboiler&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="volatiletech" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlboiler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sqlboiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;sqlboiler&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="github.com" type="462c0819:PsiDirectoryNode" />
+              <item name="volatiletech" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlboiler" type="462c0819:PsiDirectoryNode" />
+              <item name="boilingcore" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32947367" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Statistic" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="PlantUML" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/boilingcore/templates.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1638" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templatebin/bindata.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="1306" column="5" selection-start-line="1306" selection-start-column="5" selection-end-line="1306" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../spf13/cobra/command.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16980">
+          <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boil/global.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boil/columns.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drivers/table.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drivers/interface.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queries/query.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/13_all.go.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boil/db.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boil.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="304" column="38" lean-forward="true" selection-start-line="304" selection-start-column="38" selection-end-line="304" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drivers/sqlboiler-psql/driver/bindata.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6403">
+          <caret line="348" column="19" lean-forward="true" selection-start-line="348" selection-start-column="19" selection-end-line="348" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boilingcore/output.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boilingcore/aliases.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boilingcore/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boilingcore/boilingcore.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="128" column="17" lean-forward="true" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../volatiletech/sqlboiler/boilingcore/boilingcore.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="127" column="29" lean-forward="true" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

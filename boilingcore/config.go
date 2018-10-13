@@ -1,8 +1,8 @@
 package boilingcore
 
 import (
-	"github.com/volatiletech/sqlboiler/drivers"
-	"github.com/volatiletech/sqlboiler/importers"
+	"github.com/R0bson/sqlboiler/drivers"
+	"github.com/R0bson/sqlboiler/importers"
 )
 
 // Config for the running of the commands

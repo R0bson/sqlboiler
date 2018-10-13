@@ -13,8 +13,8 @@ import (
 	"unicode"
 
 	"github.com/pkg/errors"
-	"github.com/volatiletech/sqlboiler/boil"
-	"github.com/volatiletech/sqlboiler/strmangle"
+	"github.com/R0bson/sqlboiler/boil"
+	"github.com/R0bson/sqlboiler/strmangle"
 )
 
 var (
