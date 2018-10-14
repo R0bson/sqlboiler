@@ -557,7 +557,7 @@ func (p PostgresDriver) Imports() (importers.Collection, error) {
 		},
 	}
 	col.Singleton = importers.Map{
-		"psql_upsert": {
+		"zgen_psql_upsert": {
 			Standard: importers.List{
 				`"fmt"`,
 				`"strings"`,
@@ -569,12 +569,12 @@ func (p PostgresDriver) Imports() (importers.Collection, error) {
 		},
 	}
 	col.TestSingleton = importers.Map{
-		"psql_suites_test": {
+		"zgen_psql_suites_test": {
 			Standard: importers.List{
 				`"testing"`,
 			},
 		},
-		"psql_main_test": {
+		"zgen_psql_main_test": {
 			Standard: importers.List{
 				`"bytes"`,
 				`"database/sql"`,

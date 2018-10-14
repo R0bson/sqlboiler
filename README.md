@@ -1,3 +1,9 @@
+# DO NOT USE
+This fork is an experimental approach to allow extending models package without fear of removing own files or introducing dicrepancies. Although it's very experimental and works only with PostgreSQL at the moment.
+
+### No Semver guarantee!
+Everything can happen
+
 ![sqlboiler logo](https://i.imgur.com/lMXUTPE.png)
 
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/R0bson/sqlboiler/blob/master/LICENSE)
