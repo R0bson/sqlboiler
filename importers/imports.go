@@ -208,14 +208,14 @@ func NewDefaultImports() Collection {
 	}
 
 	col.Singleton = Map{
-		"boil_queries": {
+		"zgen_boil_queries": {
 			ThirdParty: List{
 				`"github.com/R0bson/sqlboiler/drivers"`,
 				`"github.com/R0bson/sqlboiler/queries"`,
 				`"github.com/R0bson/sqlboiler/queries/qm"`,
 			},
 		},
-		"boil_types": {
+		"zgen_boil_types": {
 			Standard: List{
 				`"strconv"`,
 			},
@@ -242,7 +242,7 @@ func NewDefaultImports() Collection {
 	}
 
 	col.TestSingleton = Map{
-		"boil_main_test": {
+		"zgen_boil_main_test": {
 			Standard: List{
 				`"database/sql"`,
 				`"flag"`,
@@ -259,7 +259,7 @@ func NewDefaultImports() Collection {
 				`"github.com/R0bson/sqlboiler/boil"`,
 			},
 		},
-		"boil_queries_test": {
+		"zgen_boil_queries_test": {
 			Standard: List{
 				`"bytes"`,
 				`"fmt"`,
@@ -272,7 +272,7 @@ func NewDefaultImports() Collection {
 				`"github.com/R0bson/sqlboiler/boil"`,
 			},
 		},
-		"boil_suites_test": {
+		"zgen_boil_suites_test": {
 			Standard: List{
 				`"testing"`,
 			},
