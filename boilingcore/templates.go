@@ -50,6 +50,13 @@ type templateData struct {
 	// Generate struct tags as camelCase or snake_case
 	StructTagCasing string
 
+	// OutputDirDepth is used to find sqlboiler config file
+	OutputDirDepth int
+
+	// Hacky state for where clauses to avoid having to do type-based imports
+	// for singletons
+	DBTypes once
+
 	// StringFuncs are usable in templates with stringMap
 	StringFuncs map[string]func(string) string
 }
@@ -234,6 +241,8 @@ var templateStringMappers = map[string]func(string) string{
 	"camelCase": strmangle.CamelCase,
 }
 
+var goVarnameReplacer = strings.NewReplacer("[", "_", "]", "_", ".", "_")
+
 // templateFunctions is a map of all the functions that get passed into the
 // templates. If you wish to pass a new function into your own template,
 // add a function pointer here.
@@ -241,6 +250,7 @@ var templateFunctions = template.FuncMap{
 	// String ops
 	"quoteWrap": func(s string) string { return fmt.Sprintf(`"%s"`, s) },
 	"id":        strmangle.Identifier,
+	"goVarname": func(s string) string { return goVarnameReplacer.Replace(s) },
 
 	// Pluralization
 	"singular": strmangle.Singular,
@@ -280,6 +290,7 @@ var templateFunctions = template.FuncMap{
 	// Alias and text helping
 	"aliasCols":      func(ta TableAlias) func(string) string { return func(s string) string { return ta.Column(s) } },
 	"usesPrimitives": usesPrimitives,
+	"isPrimitive":    isPrimitive,
 
 	// dbdrivers ops
 	"filterColumnsByAuto":    drivers.FilterColumnsByAuto,

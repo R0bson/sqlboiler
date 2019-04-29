@@ -17,16 +17,32 @@ build() {
 
     buildPath=github.com/R0bson/sqlboiler
     case "${driver}" in
-        all)   drivers="psql mysql mssql"; shift ;;
-        psql)  drivers="psql"; shift ;;
-        mysql) drivers="mysql"; shift ;;
-        mssql) drivers="mssql"; shift ;;
-        *) set -o xtrace; go build "$@" "${buildPath}"; set +o xtrace; return ;;
+        all)
+            set -o xtrace
+            go build "${buildPath}"
+            { set +o xtrace; } 2>/dev/null
+            drivers="psql mysql mssql"
+            shift ;;
+        psql)
+            drivers="psql"
+            shift ;;
+        mysql)
+            drivers="mysql"
+            shift ;;
+        mssql)
+            drivers="mssql"
+            shift ;;
+        *)
+            set -o xtrace
+            go build "$@" "${buildPath}"
+            { set +o xtrace; } 2>/dev/null
+            return ;;
     esac
 
     for d in $drivers; do
         set -o xtrace
         go build "$@" ${buildPath}/drivers/sqlboiler-"${d}"
+        { set +o xtrace; } 2>/dev/null
     done
 }
 
@@ -65,8 +81,8 @@ test_user() {
             ;;
         mysql)
             set -o xtrace
-            mysql --host localhost --execute "create user ${DB_USER} identified by '${DB_PASS}';" 
-            mysql --host localhost --execute "grant all privileges on *.* to ${DB_USER};" 
+            mysql --host localhost --execute "create user ${DB_USER} identified by '${DB_PASS}';"
+            mysql --host localhost --execute "grant all privileges on *.* to ${DB_USER};"
             ;;
         mssql)
             set -o xtrace
@@ -150,8 +166,8 @@ driver_test_user() {
             ;;
         mysql)
             set -o xtrace
-            mysql --host localhost --execute "create user ${DRIVER_USER} identified by '${DB_PASS}';" 
-            mysql --host localhost --execute "grant all privileges on ${DRIVER_DB}.* to ${DRIVER_USER};" 
+            mysql --host localhost --execute "create user ${DRIVER_USER} identified by '${DB_PASS}';"
+            mysql --host localhost --execute "grant all privileges on ${DRIVER_DB}.* to ${DRIVER_USER};"
             ;;
         mssql)
             set -o xtrace
@@ -210,11 +226,14 @@ driver_test_db() {
 # ====================================
 
 go_generate() {
-    if test -z "${1}"; then
+    if test -z "${1}" -o "all" = "${1}"; then
         set -o xtrace
         go generate
         set +o xtrace
-        return
+
+        if test -z "${1}"; then
+          return
+        fi
     fi
 
     if test "all" = "${1}"; then

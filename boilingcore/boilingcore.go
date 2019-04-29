@@ -143,7 +143,9 @@ func (s *State) Run() error {
 		Schema:           s.Schema,
 		LQ:               strmangle.QuoteCharacter(s.Dialect.LQ),
 		RQ:               strmangle.QuoteCharacter(s.Dialect.RQ),
+		OutputDirDepth:   s.Config.OutputDirDepth(),
 
+		DBTypes:     make(once),
 		StringFuncs: templateStringMappers,
 	}
 

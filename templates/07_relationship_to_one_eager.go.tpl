@@ -25,7 +25,13 @@ func ({{$ltable.DownSingular}}L) Load{{$rel.Foreign}}({{if $.NoContext}}e boil.E
 		if object.R == nil {
 			object.R = &{{$ltable.DownSingular}}R{}
 		}
+		{{if $usesPrimitives -}}
 		args = append(args, object.{{$col}})
+		{{else -}}
+		if !queries.IsNil(object.{{$col}}) {
+			args = append(args, object.{{$col}})
+		}
+		{{end}}
 	} else {
 		Outer:
 		for _, obj := range slice {
@@ -43,8 +49,18 @@ func ({{$ltable.DownSingular}}L) Load{{$rel.Foreign}}({{if $.NoContext}}e boil.E
 				}
 			}
 
+			{{if $usesPrimitives -}}
 			args = append(args, obj.{{$col}})
+			{{else -}}
+			if !queries.IsNil(obj.{{$col}}) {
+				args = append(args, obj.{{$col}})
+			}
+			{{end}}
 		}
+	}
+
+	if len(args) == 0 {
+		return nil
 	}
 
 	query := NewQuery(qm.From(`{{if $.Dialect.UseSchema}}{{$.Schema}}.{{end}}{{.ForeignTable}}`), qm.WhereIn(`{{.ForeignColumn}} in ?`, args...))
